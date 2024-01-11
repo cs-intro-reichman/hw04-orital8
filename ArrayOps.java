@@ -35,7 +35,7 @@ public class ArrayOps {
             max = array [i];
           }
             else;
-            if (array[i] > secmax && array[i] < max ) 
+            if (array[i] > secmax && array[i] <= max ) 
             secmax = array [i];
             else;
         }
