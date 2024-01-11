@@ -1,24 +1,26 @@
 public class ArrayOps {
     public static void main(String[] args) {
      int [] array = {8, 7 ,3,3};
-     int [] array1 = {0,1,2,8,};
-     System.out.println(isSorted(array));
+     int [] array1 = {0,3,5,1,2,3};
+     System.out.println(findMissingInt(array1));
     }
     
     public static int findMissingInt (int [] array) {
         int length = (array.length);
         int [] arraycheck = new int[length+1];
-        int missing = 1;
-        for(int i=0 ; i<=length-1 ; i++){
+        int missing = 0;
+        for(int i=0 ; i < length ; i++){
             for(int j = 0 ; j <= length ; j++) {
         if (array[i] == j) 
         arraycheck[j]=j;
         else;
         }
     }
-     for(int m=0 ; m<=length ; m++){
-        if  (arraycheck[m] != m )
+     for(int m=0 ; m <= length ; m++){
+        if  (arraycheck[m] != m ){
         missing=m;
+        return missing;
+        }
         else;
     }        
         return missing;
