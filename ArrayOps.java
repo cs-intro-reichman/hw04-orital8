@@ -30,12 +30,12 @@ public class ArrayOps {
         int max = array[0];
         int secmax = array[0];
           for(int i=0 ; i <= array.length-1 ; i++){
-          if ((array[i] > secmax) && (array[i] > max )) {
+          if ((array[i] > secmax) && (array[i] >= max )) {
             secmax = max;
             max = array [i];
           }
             else;
-            if (array[i] > secmax && array[i] <= max ) 
+            if (array[i] > secmax && array[i] < max ) 
             secmax = array [i];
             else;
         }
